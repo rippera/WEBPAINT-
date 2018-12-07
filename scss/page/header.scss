@@ -1,0 +1,39 @@
+body{
+    padding-top: 103px;
+}
+
+.navigation{
+    padding: 35px 0;
+    .logo{
+        h1{
+            vertical-align: bottom;
+            font-family: $ReklameS;
+            font-size: em(28);
+            color: $White-1;
+        }
+    }
+    .nav-li{
+        font-size: em(15);
+        color: $White-1;
+        text-transform: uppercase;
+        font-family: $LatoB;
+        padding-left: 50px;
+        transition: all .3s linear;
+        &:first-child{
+            padding-left: 0px;
+        }
+        &:hover{
+            color: $Red;
+        }
+    }
+    
+}
+
+
+
+
+
+.burger{
+    display: none;
+    background-color: $Red;
+}

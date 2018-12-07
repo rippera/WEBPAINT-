@@ -1,0 +1,89 @@
+/*DISPLAY FLEX*/
+
+.d-flex{
+	display: flex;
+}
+.align-items{
+	align-items: center;
+	justify-content: center;
+}
+.jc-space-betwwen{
+	align-items: center;
+	justify-content: space-between;
+}
+.jc-space-around{
+	align-items: center;
+	justify-content: space-around;
+}
+.d-wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+.d-row{
+	display: flex;
+	flex-direction: row;
+	flex-direction: column;
+}
+.df-Wcol{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+/*DISPLAY FLEX*/
+
+/*MAIN BASSE CLASS*/
+.container{
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+.text-center{
+	text-align: center;
+}
+.inline-block{
+	display: inline-block;
+	vertical-align: middle;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+.relative{
+    position: relative;
+}
+
+.header-fixed{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	background: #000000 ;  /* background for change */
+}
+
+.burger{
+	content: "";
+	width: 25px;
+	height: 4px;
+	display: block;
+	background-color: #ffffff;
+	margin-bottom: 3px;
+	border-radius: 4px;
+	size: 30px;
+}
+.burger:last-child{
+	margin-bottom: 0px;
+}
+
+.active{
+    color: $Red !important;
+}

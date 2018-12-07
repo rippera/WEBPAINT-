@@ -1,0 +1,44 @@
+.section-3{
+    padding: 60px 0;
+}
+.works-title{
+    h1{
+        font-family: $LatoB;
+        font-size: em(30);
+        color: $Black-3;
+        margin-bottom: 20px;
+    }
+    p{
+        font-family: $LatoL;
+        font-size: em(20);
+        color: $Black-3;
+        margin-bottom: 60px;
+    }
+}
+.botton-wrapper{
+    h1{
+        text-transform: uppercase;
+        padding: 20px;
+        background: $Red;
+        border-radius: 10px;
+        font-family: $LatoB;
+        font-size: em(12);
+        color: $White;
+        cursor: pointer;
+        letter-spacing: 4px;
+        margin-right: 10px;
+        &:first-child{
+            background: $Black-4;
+        }
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+}
+
+.portfolio-box{
+    img{
+        margin-bottom: 10px;
+        // margin-right: 10px;
+    }
+}

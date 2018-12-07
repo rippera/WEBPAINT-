@@ -1,0 +1,63 @@
+.section-4{
+    padding: 60px;
+    background: $Black-5;
+}
+.touch-box{
+    h1{
+        font-family: $LatoB;
+        font-size: em(30);
+        color: $White;
+        margin-bottom: 20px;
+    }
+    p{
+        font-family: $LatoL;
+        font-size: em(20);
+        color: #bebebe;
+        margin-bottom: 20px;
+    }
+}
+
+.addres-box{
+    font-family: $LatoR;
+    font-size: em(14);
+    color: #bebebe;
+    margin-bottom: 20px;
+    span{
+        margin-left: 20px;
+    }
+}
+
+.social-icons{
+    margin-top: 50px;
+}
+.social-ul{
+    font-size: em(15);
+}
+.social-li{
+    // padding: 10px;
+    line-height: 2;
+    width: em(30);
+    height: em(30);
+    margin-left: 15px;
+    color: $White;
+    &:nth-child(1){
+        background-color: $Yellow-5;
+        border-radius: 100px;
+    }
+    &:nth-child(2){
+        background-color: $Lblue;
+        border-radius: 100px;
+    }
+    &:nth-child(3){
+        background-color: $Skyblue;
+        border-radius: 100px;
+    }
+    &:nth-child(4){
+        background-color: $Pink;
+        border-radius: 100px;
+    }
+    &:nth-child(5){
+        background-color: $Red-2;
+        border-radius: 100px;
+    }
+}

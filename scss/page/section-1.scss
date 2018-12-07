@@ -1,0 +1,32 @@
+.section1{
+    background: $Black-2;
+    padding: 60px 0;
+}
+.name-wrapper{
+    h1{
+        font-family: $LatoB;
+        font-size: em(60);
+        color: $White-1;
+        margin-bottom: 30px;
+    }
+    p{
+        font-family: $LatoL;
+        font-size: em(40);
+        color: $White-1;
+        margin-bottom: 50px;
+    }
+}
+.button{
+    width: em(200,16);
+    height: em(50);
+    background-color: $Red;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+    h2{
+        font-family: $LatoB;
+        text-transform: uppercase;
+        color: $White;
+        padding-top: 15px;
+    }
+}

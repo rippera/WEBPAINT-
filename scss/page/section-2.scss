@@ -1,0 +1,26 @@
+.section-2{
+    padding: 60px 0;
+    background: $White-2;
+    .item-box{
+        max-width: em(300,18);
+        width: 100%;
+        height: 100%;
+        .item-img{
+            font-size: em(50);
+            color: $Black-3;
+            margin-bottom: 10px;
+        }
+        .item-title{
+           h1{
+            font-family: $LatoB;
+            margin-bottom: 10px;
+            color: $Black-3;
+           }
+           p{
+            font-family: $LatoR;
+            color: $Black-3;
+            line-height: 1.5
+           }
+        }
+    }
+}
