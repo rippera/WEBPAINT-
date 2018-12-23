@@ -174,8 +174,17 @@ a {
 .active {
   color: #ff6760 !important; }
 
+.hidden {
+  display: none; }
+
+.show {
+  display: block; }
+
 body {
   padding-top: 103px; }
+
+html {
+  scroll-behavior: smooth; }
 
 .navigation {
   padding: 35px 0; }
@@ -277,8 +286,8 @@ body {
   cursor: pointer;
   letter-spacing: 4px;
   margin-right: 10px; }
-  .botton-wrapper h1:first-child {
-    background: #595959; }
+  .botton-wrapper h1.black-active {
+    background: #595959 !important; }
   .botton-wrapper h1:last-child {
     margin-right: 0px; }
 

@@ -27,8 +27,8 @@
         cursor: pointer;
         letter-spacing: 4px;
         margin-right: 10px;
-        &:first-child{
-            background: $Black-4;
+        &.black-active{
+            background: $Black-4 !important;
         }
         &:last-child{
             margin-right: 0px;
