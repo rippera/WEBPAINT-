@@ -64,3 +64,13 @@ gBtnsWrapper.addEventListener('click', function(e){
     }
 });
 
+
+window.addEventListener('scroll',function () {
+    if (window.scrollY > 100) {
+        let section3 = document.getElementById('test');
+        section3.classList.add('fadeInUp');
+    } if (window.scrollY > 1000) {
+        let section4 = document.getElementById('section-4');
+        section4.classList.add('bounceInLeft');
+    }
+})

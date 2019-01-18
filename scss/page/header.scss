@@ -31,24 +31,7 @@ html{
     }
     
 }
-
-
-
-
-
 .burger{
     display: none;
     background-color: $Red;
 }
-
-
-@keyframes drop {
-    from{
-        top: -100%;
-    }
-    to{
-        top: 100%;
-    }
-}
-
-
