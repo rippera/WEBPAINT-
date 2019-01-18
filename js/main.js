@@ -18,7 +18,8 @@ nav.addEventListener('click', function(event){
             var toBeActive = event.target;
             var parent = toBeActive.parentElement
             parent.classList.add('active');
-        }  
+        } 
+        nav.classList.remove('nav-active') 
     })
 });
 
