@@ -6,7 +6,9 @@
 }
 
 @media screen and (max-width: 980px){
-
+.go-top{
+    left: 50px;
+}
 .navigation{
     .nav-ul{
         display: block;
@@ -72,6 +74,13 @@
 }
 
 @media screen and (max-width: 460px){
+    .go-top{
+        left: 20px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        line-height: 1.2;
+    }
     .name-wrapper{
         h1{
             font-size: em(32);

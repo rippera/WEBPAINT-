@@ -40,8 +40,6 @@ btnWrapper.addEventListener('click', function(event){
     })
 });
 
-
-
 let gBtns = document.querySelectorAll('.gallery .botton-wrapper h1');
 let gImgs = document.querySelectorAll('.gallery .portfolio-box');
 let gBtnsWrapper = document.querySelector('.gallery .botton-wrapper');
@@ -66,11 +64,44 @@ gBtnsWrapper.addEventListener('click', function(e){
 
 
 window.addEventListener('scroll',function () {
+    headerScroll();
+    section3Animation();
+    section4Animation();
+    goTop();
+});
+
+function section3Animation() {
     if (window.scrollY > 100) {
         let section3 = document.getElementById('test');
         section3.classList.add('fadeInUp');
-    } if (window.scrollY > 1000) {
+    }
+};
+
+function section4Animation() {
+    if (window.scrollY > 1000) {
         let section4 = document.getElementById('section-4');
         section4.classList.add('bounceInLeft');
     }
-})
+};
+
+function goTop() {
+    let goTop = document.getElementById('gotop');
+    if (window.scrollY > 90) {
+        goTop.classList.add('show')
+    }else {
+        goTop.classList.remove('show');
+    }
+};
+
+function headerScroll() {
+    let top = document.getElementById('navigation');
+    let navUl = document.getElementById('nav-ul');
+    let ypos = window.pageYOffset;
+    if (ypos > 200) {
+        top.style.height = '70px';
+        navUl.style.marginLeft = '360px';
+    }else {
+        top.style.height = '103px';
+        navUl.style.marginLeft = '0px';
+    }
+}

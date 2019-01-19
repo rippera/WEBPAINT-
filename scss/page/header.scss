@@ -4,9 +4,12 @@ body{
 html{
     scroll-behavior: smooth;
 }
-
+.nav-ul{
+    transition: .3s;
+}
 .navigation{
     padding: 35px 0;
+    transition: .3s;
     .logo{
         h1{
             vertical-align: bottom;
