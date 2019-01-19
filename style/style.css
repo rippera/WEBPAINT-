@@ -480,7 +480,8 @@ html {
     left: 50px; }
   .navigation .nav-ul {
     display: block;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-left: 0 !important; }
   .navigation .nav-li {
     display: block;
     padding-left: 0px;
@@ -495,7 +496,7 @@ html {
     left: 0;
     background-color: black;
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     -webkit-animation: drop .3s linear;
     animation: drop .3s linear;
     z-index: 3; }
