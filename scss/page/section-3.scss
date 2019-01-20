@@ -39,6 +39,14 @@
 .portfolio-box{
     img{
         margin-bottom: 10px;
+        transition: all .3s linear;
+        opacity: 0.5;
+        &:hover{
+            transform: scale(1.2,1.2);
+            opacity: 1;
+            border-radius: 50px;
+            cursor: pointer;
+        }
         // margin-right: 10px;
     }
 }
