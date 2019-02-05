@@ -167,7 +167,7 @@ function fetchComments() {
         let body = comments[i].body;
         
         commentResult.innerHTML +=  '<div class="comments-box">'+
-                                    '<img src="../img/user.png">'+
+                                    '<img src="img/user.png">'+
                                     '<h3 class="comments-h3">'+name+'</h3>'+
                                     '<h4 class="comments-h4">'+body+'</h4>'+
                                     '</div>';
