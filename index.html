@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
-<body>
+<body onload="fetchComments();">
 
 <!-- HEADER -->
 <header class="header-fixed">
@@ -182,11 +182,30 @@
     </section>
 <!-- END SECTION-4 -->
 
+<!-- SECTION-5 -->
+<section class="section-5" id="section-5">
+    <div class="container">
+        <div class="comment-wrapper">
+            <div class="comment-box">
+                <h1>Leave us a comment</h1>
+                <div id="commentOutput"></div>
+                <form action="" id="comment-form">
+                    <input type="text" id="comment-name" placeholder="enter your name">
+                    <textarea name="text" id="comment-body" placeholder="enter your comment"></textarea>
+                    <button id="btn-comment">submit</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SECTION-5 -->
+
 <!-- FOOTER -->
 <section class="footer-section">
     <div class="container">
         <footer class="footer text-center">
-            <h1>@ 2013 Webpaint. All Rights Reserved.</h1>
+            <h1>&copy; 2013 Webpaint. All Rights Reserved.</h1>
         </footer>
     </div>
 </section>

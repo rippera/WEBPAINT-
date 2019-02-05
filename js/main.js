@@ -105,3 +105,71 @@ function headerScroll() {
         navUl.style.marginLeft = '0px';
     }
 }
+
+// comment box  //
+
+let commentForm = document.getElementById('comment-form');
+let btnComment  = document.getElementById('btn-comment');
+
+commentForm.addEventListener('submit', saveComment);
+
+function saveComment(e) {
+    let commentName = document.getElementById('comment-name').value;
+    let commentBody = document.getElementById('comment-body').value;
+    // if input is not fill
+    if (!commentName || !commentBody) {
+        alert('Please Fill Name And Comment inputs');
+        return false;
+    }
+    let comment = {
+        name: commentName,
+        body: commentBody
+    }
+    if (localStorage.getItem('comments') === null) {
+        // init array
+        let comments = [];
+         // add to array
+        comments.push(comment);
+        // set to localstorage
+        localStorage.setItem('comments',JSON.stringify(comments));
+    } else {
+        // get comments from localStorage 
+        let comments = JSON.parse(localStorage.getItem('comments'));
+        // add comments to array
+        comments.push(comment);
+        // Re-set back to localStorage
+        localStorage.setItem('comments',JSON.stringify(comments));
+    }
+
+    // clear form
+    commentForm.reset();
+    // Re-fetch comments
+    fetchComments();
+
+e.preventDefault();   
+}
+
+// fetch comments
+
+function fetchComments() {
+    // get comments from localStorage 
+    let comments = JSON.parse(localStorage.getItem('comments'));
+    // Get output ID
+    let commentResult = document.getElementById('commentOutput');
+
+    // Build output
+    commentResult.innerHTML = '';
+
+    // loop
+
+    for (let i = 0; i < comments.length; i++) {
+        let name = comments[i].name;
+        let body = comments[i].body;
+        
+        commentResult.innerHTML +=  '<div class="comments-box">'+
+                                    '<img src="../img/user.png">'+
+                                    '<h3 class="comments-h3">'+name+'</h3>'+
+                                    '<h4 class="comments-h4">'+body+'</h4>'+
+                                    '</div>';
+    }
+}
