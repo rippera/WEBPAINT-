@@ -62,4 +62,15 @@
   .bounceInLeft {
 	animation: bounceInLeft 2s linear;
   }
-  
+	
+	
+	// log in animations
+
+	@keyframes animatezoom {
+		from {transform: scale(0)} 
+		to   {transform: scale(1)}
+	}
+	@keyframes animatezoomout {
+		from {transform: scale(1)} 
+		to   {transform: scale(0)}
+	}

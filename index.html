@@ -28,6 +28,7 @@
                     <li class="nav-li"><a href="#section-4">contact</a></li>
                 </ul>
             </nav>
+            <input id="logIn" class="login-btn" type="button" value="log-in">
             <div>
                 <span class="burger"></span>
                 <span class="burger"></span>
@@ -36,6 +37,27 @@
         </div>
     </div>
 </header>
+<!-- log in form -->
+<div class="container">
+    <form action="" id="loginForm" class="login-form">
+        <div class="input-container relative">
+            <span id="closeBtn" class="close">&times;</span>
+            <div class="imgcontainer">
+                <img src="img/user.png" alt="userpic">
+            </div>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <button id="submit-btn" type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+    </form>
+</div>
 <!-- END HEADER -->
 <div class="go-top" id="gotop"><a href="#top"><i class="fas fa-arrow-up"></i></a></div>
 <!-- SECTION-1 -->

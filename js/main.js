@@ -106,6 +106,20 @@ function headerScroll() {
     }
 }
 
+// log-in form
+let logIn = document.getElementById('logIn');
+let closeBtn = document.getElementById('closeBtn');
+let loginForm = document.getElementById('loginForm');
+
+logIn.addEventListener('click', showLogin);
+closeBtn.addEventListener('click', closeLogin);
+function showLogin() {
+    loginForm.classList.add('show', 'animateZoom');
+}
+function closeLogin() {
+    loginForm.classList.remove('show', 'animateZoom');
+}
+
 // comment box  //
 
 let commentForm = document.getElementById('comment-form');
@@ -173,3 +187,4 @@ function fetchComments() {
                                     '</div>';
     }
 }
+
