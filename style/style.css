@@ -187,13 +187,17 @@ a {
   background: green;
   position: fixed;
   bottom: 50px;
-  right: 50px;
+  right: 30px;
   border-radius: 50px;
   z-index: 25;
   line-height: 1.7;
   text-align: center;
   font-size: 24px;
   padding: 5px; }
+
+.anime {
+  -webkit-animation: gotopAnimation 1s linear;
+  animation: gotopAnimation 1s linear; }
 
 @-webkit-keyframes drop {
   from {
@@ -318,6 +322,18 @@ a {
   to {
     -webkit-transform: scale(0);
     transform: scale(0); } }
+
+@-webkit-keyframes gotopAnimation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes gotopAnimation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 body {
   padding-top: 103px; }

@@ -74,3 +74,14 @@
 		from {transform: scale(1)} 
 		to   {transform: scale(0)}
 	}
+
+	// gotop animation
+
+	@keyframes gotopAnimation{
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}

@@ -87,9 +87,11 @@ function section4Animation() {
 function goTop() {
     let goTop = document.getElementById('gotop');
     if (window.scrollY > 200) {
-        goTop.classList.add('show')
+        goTop.classList.add('show');
+        goTop.classList.add('anime');
     }else {
         goTop.classList.remove('show');
+        goTop.classList.remove('anime');
     }
 };
 

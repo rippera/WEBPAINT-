@@ -103,11 +103,15 @@
 	background: green;
 	position: fixed;
 	bottom: 50px;
-	right: 50px;
+	right: 30px;
 	border-radius: 50px;
 	z-index: 25;
 	line-height: 1.7;
     text-align: center;
     font-size: 24px;
 	padding: 5px;
+}
+
+.anime{
+	animation: gotopAnimation 1s linear;
 }
