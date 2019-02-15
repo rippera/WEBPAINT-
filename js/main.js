@@ -71,16 +71,20 @@ window.addEventListener('scroll',function () {
 });
 
 function section3Animation() {
-    if (window.scrollY > 100) {
-        let section3 = document.getElementById('test');
+    let section3 = document.getElementById('test');
+    if (window.scrollY > 150) {
         section3.classList.add('fadeInUp');
+    }else{
+        section3.classList.remove('fadeInUp');
     }
 };
 
 function section4Animation() {
+    let section4 = document.getElementById('section-4');
     if (window.scrollY > 1000) {
-        let section4 = document.getElementById('section-4');
         section4.classList.add('bounceInLeft');
+    }else{
+        section4.classList.remove('bounceInLeft');
     }
 };
 
